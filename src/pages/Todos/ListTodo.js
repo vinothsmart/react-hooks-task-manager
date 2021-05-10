@@ -19,12 +19,18 @@ const Todos = (props) => {
               </tr>
             </thead>
             <tbody>
-              {todos.map((list) => {
+              {/* {todos.map((list) => {
                 <tr>
                   <td>{list.title}</td>
                   <td>{list.desription}</td>
                 </tr>;
-              })}
+              })} */}
+              {todos.map((list) => (
+                <tr>
+                  <td>{list.title}</td>
+                  <td>{list.description}</td>
+                </tr>
+              ))}
             </tbody>
           </Table>
         </Col>
